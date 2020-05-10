@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom">Assignment</div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action" id="question1Link" onclick="question_1()">Question 1</a>
+                <a href="#" class="list-group-item list-group-item-action" id="question2Link" onclick="question_2()">Question 2</a>
+                <a href="#" class="list-group-item list-group-item-action" id="question3Link" onclick="question_3()">Question 3</a>
+                <a href="#" class="list-group-item list-group-item-action" id="question4Link" onclick="question_4()">Question 4</a>
+                <a href="#" class="list-group-item list-group-item-action" id="question5Link" onclick="question_5()">Question 5</a>
+                <a href="#" class="list-group-item list-group-item-action" id="question6Link" onclick="question_6()">Question 6</a>
+                <a href="#" class="list-group-item list-group-item-action" id="question7Link" onclick="question_7()">Question 7</a>
+                <a href="#" class="list-group-item list-group-item-action" id="question8Link" onclick="question_8()">Question 8</a>
+                <a href="#" class="list-group-item list-group-item-action" id="question9Link" onclick="question_9()">Question 9</a>
+                <a href="#" class="list-group-item list-group-item-action" id="question10Link" onclick="question_10()">Question 10</a>
+            </div>
+        </div>
+        <!-- Sidebar Ends Here -->
+
+        <!-- Page Content -->
+        <div id="page-content-wraper">
+            <button class="btn btn-primary mt-3 ml-4 mb-3" id="menu-toggle">Toggle Menu</button>
+            
+            <div class="container-fluid qustions" id="question1" hidden=true>
+                <h1 class="heading">Question-1</h1>
+                <p>Write a JavaScript function to get an array and to read the first element of an array. 
+                    Check whether it is prime or not.</p>
+                <div class="question-action">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter an array of numbers, with each numbers seprated by a comma and a space</label>
+                            <input type="text" class="form-control" id="number1Array">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="question1Button">Solve</button>
+                    </form>
+                </div>
+                <div class="border border-primary solution" id="solution1" hidden=true>
+                    
+                </div>
+            </div>
+            <div class="container-fluid qustions" id="question2" hidden=true>
+                <h1 class="heading">Question-2</h1>
+                <p>Write a JavaScript program to find the most frequent item of an array.</p>
+                <div class="question-action">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter an array of numbers, with each numbers seprated by a comma and a space</label>
+                            <input type="text" class="form-control" id="number2Array">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="question2Button">Solve</button>
+                    </form>
+                </div>
+                <div class="border border-primary solution" id="solution2" hidden=true>
+                    
+                </div>
+            </div>
+            <div class="container-fluid qustions" id="question3" hidden=true>
+                <h1 class="heading">Question-3</h1>
+                <p>Write a JavaScript program which accept a string as input and swap the case of
+                    each character. For example if you input 'The Quick Brown Fox' the output should
+                    be 'tHE qUICK bROWN fOX'.</p>
+                <div class="question-action">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter a string</label>
+                            <input type="text" class="form-control" id="string1">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="question3Button">Solve</button>
+                    </form>
+                </div>
+                <div class="border border-primary solution" id="solution3" hidden=true>
+                    
+                </div>
+            </div>
+            <div class="container-fluid qustions" id="question4" hidden=true>
+                <h1 class="heading">Question-4</h1>
+                <p>Write a JavaScript program to find the sum of squares of the elements of an array.</p>
+                <div class="question-action">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter an array of numbers, with each numbers seprated by a space</label>
+                            <input type="text" class="form-control" id="number3Array">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="question4Button">Solve</button>
+                    </form>
+                </div>
+                <div class="border border-primary solution" id="solution4" hidden=true>
+                    
+                </div>
+            </div>
+            <div class="container-fluid qustions" id="question5" hidden=true>
+                <h1 class="heading">Question-5</h1>
+                <p>Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, check
+                    if the current number is odd or even, and display the message to the screen as odd
+                    or even.</p>
+                <div class="question-action">
+                    <button type="button" class="btn btn-primary" id="question5Button">Solve</button>
+                </div>
+                <div class="border border-primary solution" id="solution5" hidden=true>
+                    
+                </div>
+            </div>
+            <div class="container-fluid qustions" id="question6" hidden=true>
+                <h1 class="heading">Question-6</h1>
+                <p>Write a JavaScript function to truncate a string if it is longer than the specified
+                    number of characters.</p>
+                <div class="question-action">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter the string limit</label>
+                            <input type="number" class="form-control" id="stringLimit">
+                        </div>
+                        <div class="form-group">
+                            <label>Enter a string</label>
+                            <input type="text" class="form-control" id="string2">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="question6Button">Solve</button>
+                    </form>
+                </div>
+                <div class="border border-primary solution" id="solution6" hidden=true>
+                    
+                </div>
+            </div>
+            <div class="container-fluid qustions" id="question7" hidden=true>
+                <h1 class="heading">Question-7</h1>
+                <p>Write a JavaScript program that accept two integers and display the larger using
+                    findLarge() function.</p>
+                <div class="question-action">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter a number</label>
+                            <input type="number" class="form-control" id="number1">
+                        </div>
+                        <div class="form-group">
+                            <label>Enter another number</label>
+                            <input type="number" class="form-control" id="number2">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="question7Button">Solve</button>
+                    </form>
+                </div>
+                <div class="border border-primary solution" id="solution7" hidden=true>
+                    
+                </div>
+            </div>
+            <div class="container-fluid qustions" id="question8" hidden=true>
+                <h1 class="heading">Question-8</h1>
+                <p>Write a JavaScript program using for...in to read the objects from an array entered
+                    by an user and to arrange it in alphabetical order.</p>
+                <div class="question-action">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Employee ID</label>
+                                <input type="number" id="empID" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Name</label>
+                                <input type="text" id="empName" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Department</label>
+                                <input type="text" id="empDept" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Designation</label>
+                                <input type="text" id="empDesg" class="form-control">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="saveButton">Save</button>
+                        <button type="button" class="btn btn-primary" id="question8Button">Sort Data</button>
+                    </form>
+                </div>
+                <div class="border border-primary solution" id="solution8" hidden=true>
+                    
+                </div>
+            </div>
+            <div class="container-fluid qustions" id="question9" hidden=true>
+                <h1 class="heading">Question-9</h1>
+                <p>Write a JavaScript program to print the letters of the word “Javascript” as below in
+                    each line using for...of.</p>
+                <img src="./images/js-pattern.png" alt="js-pattern">
+                <div class="question-action">
+                    <button type="button" class="btn btn-primary mt-4" id="question9Button">Solve</button>
+                </div>
+                <div class="border border-primary solution" id="solution9" hidden=true>
+                    
+                </div>
+            </div>
+            <div class="container-fluid qustions" id="question10" hidden=true>
+                <h1 class="heading">Question-10</h1>
+                <p>Write a JavaScript program to construct the following pattern, using a nested for
+                    loop.</p>
+                <img src="./images/pattern.png" alt="pattern">
+                <div class="question-action">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter the level of pattern to be displayed</label>
+                            <input type="number" class="form-control" id="patternLevel">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="question10Button">Solve</button>
+                    </form>
+                </div>
+                <div class="border border-primary solution" id="solution10" hidden=true>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+    <script src="./question-1.js"></script>
+    <script src="./question-2.js"></script>
+    <script src="./question-3.js"></script>
+    <script src="./question-4.js"></script>
+    <script src="./question-5.js"></script>
+    <script src="./question-6.js"></script>
+    <script src="./question-7.js"></script>
+    <script src="./question-8.js"></script>
+    <script src="./question-9.js"></script>
+    <script src="./question-10.js"></script>
+</body>
+</html>
